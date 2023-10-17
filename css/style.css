@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+body {
+    font-family: 'Roboto mono',monospace;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+} 
+
+a {
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ; 
+}
+
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right:50px;
+}
+
+header .icons span {
+    color: white;
+}
+
+
+.container-nav {
+    display: grid;
+    grid-template-columns: 40px 550px 130px  130px ;
+    align-items: center;
+    justify-content: center;
+    background-color: #22272d;
+    height: 100px;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.nav-logo-container img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.profile-link {
+    margin: 0 20px 0 20px;
+    
+}
+
+.profile-link:active {
+    color: red;
+}
+
+.profile-link:hover a{
+    color: black;
+    background-color: rgb(121, 127, 233);
+    box-shadow: 0 0 5px rgba(0, 195, 255, 0.8),
+                0 0 10px rgba(0, 229, 255, 0.8),
+                0 0 15px rgba(51, 0, 255, 0.8);
+    
+}
+
+.search-link-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-lupa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-lupa img {
+    height: 20px;
+    width: 20px;
+}
+
+.search-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-main-button {
+    
+    background: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    
+
+}
+
+.search-link-inner {
+    background: white;
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    border-top-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    
+}
+.search-link-inner p {
+    margin: 0 20px 0 0;
+    color: rgba(234, 240, 246, 0.8);  
+    user-select: none; 
+    cursor: text;
+}
+
+.search-link-inner a,
+.search-main-button a {
+  color: black; 
+  transition: color 0.3s, opacity 0.3s; 
+  cursor: pointer;  
+ 
+}
+
+.search-link-inner a:hover,
+.search-main-button a:hover {
+  color: #47cfac; 
+  opacity: 0.8; 
+}
+
